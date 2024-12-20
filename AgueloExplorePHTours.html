@@ -2,8 +2,135 @@
 <html>
     <head>
         <title>Explore PH Tours</title>
+        <link rel="png" type="image/png" href="HtmlAsyncLogo.png">
+        <style>
+            nav{
+                text-align: center;
+                background-color: blue;
+            }
+            nav a{
+                color: white;
+                padding: 14px 20px;
+                text-decoration: none;
+                display: inline-block;
+            }
+            header{
+                font-size: 1.5em;
+                margin-top: 10px;
+                text-align: center;
+            }
+            
+            .cta {
+            background-color: blue;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            }
+            .cta button {
+                background-color: white;
+                color: black;
+                padding: 15px 30px;
+                border: none;
+                font-size: 1.2em;
+                cursor: pointer;
+            }
+            .cta button:hover {
+                background-color: #0056b3;
+            }
+            .branches {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 40px;
+            }
+            .branch {
+                background-color: #f8f9fa;
+                padding: 20px;
+                border: 1px solid #ddd;
+                width: 30%;
+                text-align: center;
+            }
+            footer {
+            background-color: blue;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            }
+            footer a {
+                color: white;
+                margin: 0 10px;
+                text-decoration: none;
+            }
+            footer a:hover {
+                text-decoration: underline;
+            }
+        </style>
     </head>
     <body>
-        <img src="HtmlAsyncBanner.png"/>
+        <header>
+            <img src="HtmlAsyncBanner.png" width="1900" height="500"/>
+            <p>Your Gateway to the philippines!</p>
+        </header>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Services</a>
+            <a href="#">Promos</a>
+            <a href="#">Contact</a>
+        </nav>
+        <main>
+            <section id="section1">
+                <h2>Our services</h2>
+                <ul>
+                    <li>Island Hopping Tours</li>
+                    <li>Guided City Tours</li>
+                    <li>Mountain Trekking Packages</li>
+                    <li>Hotel and transport Reservation</li>
+                    <li>Customized Travel Itinerates</li>
+                </ul>
+            </section>
+            <section id="section2">
+                <h2>Speical Promos</h2>
+                <ul>
+                    <li>"3+1 Free" group packages.</li>
+                    <li>20% discount on bookings made at least a month in advance.
+                    </li>
+                    <li>Special weekend rates for island hopping in Cebu</li>
+                </ul>
+            </section>
+            <section id="section3" >
+                <h2>Popular Packages:</h2>
+                <ul>
+                    <li>Manila: Historic Intramuros Tour with Food Crawl</li>
+                    <li>Cebu: Whale Shark Watching and Kawasan Falls Advent</li>
+                    <li>Davao: Mt. Apo Climbing Experience</li>
+                </ul>
+            </section>
+            <div class="cta">
+                <h3>Book Your Next Adventure Today!</h3>
+                <p>Explore the Philippines like never before with our exciting packages. Limited slots available for promo deals. Don't miss out!</p>
+                <button onclick="window.location.href='#'">Book Now</button>
+            </div>
+        </main>
+        <section class="branches">
+            <div class="branch">
+                <h3>Davao</h3>
+                <p>(+63)345-6789</p>
+            </div>
+            <div class="branch">
+                <h3>Cebu</h3>
+                <p>(+63)234-5678</p>
+            </div>
+            <div class="branch">
+                <h3>Manila</h3>
+                <p>(+63)123-4567</p>
+            </div>
+        </section>
+        <footer>
+            <p>&copy; 2024 Explore PH Tours. All Rights Reserved.</p>
+            <p>
+                <a href="#">Facebook</a>
+                <a href="#">Twitter</a>
+                <a href="#">Instagram</a>
+            </p>
+        </footer>
     </body>
 </html>
