@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bible Verse Finder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Bible Verse Finder</h1>
+        <div class="input-group">
+            <input type="text" id="book" placeholder="Book (e.g., John)" required>
+            <input type="number" id="chapter" placeholder="Chapter" required>
+            <input type="number" id="verse" placeholder="Verse" required>
+            <button id="fetchVerseBtn">Fetch Verse</button>
+        </div>
+        <div id="verseDisplay" class="verse-display">
+            <p id="verseText">Enter a reference above to see the verse.</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
